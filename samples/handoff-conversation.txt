@@ -1,0 +1,6 @@
+Noa: I need the handoff ready soon.
+Tal: Soon as in this week, or before the sprint review?
+Noa: Before the review. It should be clean.
+Tal: Clean meaning all states are specced, or just the main flow?
+Noa: Just make it clean. You know what I mean.
+Tal: I'll do the main flow and flag what's missing.

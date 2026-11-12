@@ -1,0 +1,34 @@
+{
+  "topics": ["homepage design direction", "meaning of bolder", "level of detail in feedback", "deadline"],
+  "statements": [
+    {"turn": "T01", "speaker": "A", "type": "request", "summary": "A says the design needs to be bolder and is not yet there.", "quote": "I think the design needs to be bolder."},
+    {"turn": "T02", "speaker": "B", "type": "question", "summary": "B asks A for an example of what bolder means.", "quote": "Can you give me an example of what you mean by bolder?"},
+    {"turn": "T03", "speaker": "A", "type": "statement", "summary": "A says they do not want to go into all the details.", "quote": "I don’t want to get into all the details."},
+    {"turn": "T03", "speaker": "A", "type": "statement", "summary": "A says they trust B to find the right direction.", "quote": "I trust you to find the right direction."},
+    {"turn": "T04", "speaker": "B", "type": "commitment", "summary": "B says they will explore a few options.", "quote": "Okay, I’ll explore a few options."},
+    {"turn": "T04", "speaker": "B", "type": "question", "summary": "B states they want to make sure the two are aligned on the deadline.", "quote": "Just want to make sure we’re aligned on the deadline."}
+  ],
+  "signals": [
+    {"type": "ambiguous_term", "description": "The term 'bolder' is used without a definition or example.", "evidence": [{"turn": "T01", "quote": "I think the design needs to be bolder."}]},
+    {"type": "clarification_request", "description": "B asks for an example of what bolder means.", "evidence": [{"turn": "T02", "quote": "Can you give me an example of what you mean by bolder?"}]},
+    {"type": "unanswered_question", "description": "B's request for an example received no example in reply; A stated they do not want to get into details.", "evidence": [{"turn": "T02", "quote": "Can you give me an example of what you mean by bolder?"}, {"turn": "T03", "quote": "I don’t want to get into all the details."}]},
+    {"type": "unclear_responsibility", "description": "A leaves finding the direction to B; the deadline B raises is not stated or answered in the transcript.", "evidence": [{"turn": "T03", "quote": "I trust you to find the right direction."}, {"turn": "T04", "quote": "Just want to make sure we’re aligned on the deadline."}]}
+  ],
+  "perspectives": {
+    "A": [
+      {"kind": "position", "text": "A said the design is not yet there and needs to be bolder.", "evidence": [{"turn": "T01", "quote": "It’s not quite there yet."}]},
+      {"kind": "expectation", "text": "A said they trust B to find the right direction.", "evidence": [{"turn": "T03", "quote": "I trust you to find the right direction."}]},
+      {"kind": "position", "text": "A said they do not want to get into all the details.", "evidence": [{"turn": "T03", "quote": "I don’t want to get into all the details."}]}
+    ],
+    "B": [
+      {"kind": "request", "text": "B asked for an example of what bolder means.", "evidence": [{"turn": "T02", "quote": "Can you give me an example of what you mean by bolder?"}]},
+      {"kind": "proposal", "text": "B said they will explore a few options.", "evidence": [{"turn": "T04", "quote": "Okay, I’ll explore a few options."}]},
+      {"kind": "concern", "text": "B said they want to make sure they are aligned on the deadline.", "evidence": [{"turn": "T04", "quote": "Just want to make sure we’re aligned on the deadline."}]}
+    ]
+  },
+  "explicit_agreements": [],
+  "unresolved": [
+    {"description": "What 'bolder' means concretely was not defined.", "evidence": [{"turn": "T03", "quote": "I don’t want to get into all the details."}]},
+    {"description": "The deadline alignment B raised was not addressed.", "evidence": [{"turn": "T04", "quote": "Just want to make sure we’re aligned on the deadline."}]}
+  ]
+}

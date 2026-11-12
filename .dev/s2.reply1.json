@@ -1,0 +1,39 @@
+{
+  "topics": ["onboarding flow seamlessness", "Thursday leadership deadline", "which parts to show", "review before leadership", "user testing"],
+  "statements": [
+    {"turn": "T01", "speaker": "A", "type": "request", "summary": "A wants the flow more seamless and needs it for leadership on Thursday.", "quote": "I need it in front of the leadership team on Thursday."},
+    {"turn": "T02", "speaker": "B", "type": "question", "summary": "B asks which parts of the flow A means.", "quote": "Which parts of the flow are you thinking of?"},
+    {"turn": "T02", "speaker": "B", "type": "concern", "summary": "B notes Thursday this week leaves two days.", "quote": "Thursday this week? That’s two days."},
+    {"turn": "T03", "speaker": "A", "type": "answer", "summary": "A asks B to pick what matters most and says A trusts B.", "quote": "Pick what matters most."},
+    {"turn": "T04", "speaker": "B", "type": "proposal", "summary": "B offers to look at sign-up and first-run screens.", "quote": "I can look at the sign-up and the first-run screens."},
+    {"turn": "T04", "speaker": "B", "type": "question", "summary": "B asks who decides what goes to leadership and whether A will review.", "quote": "Do you want me to decide what goes to leadership as well, or will you review it first?"},
+    {"turn": "T05", "speaker": "A", "type": "answer", "summary": "A may glance at it Wednesday night and says it is mostly B's.", "quote": "I’ll glance at it Wednesday night if I can."},
+    {"turn": "T06", "speaker": "B", "type": "concern", "summary": "B says two days is tight for user testing so it would be untested.", "quote": "I do think two days is tight for user testing, so I’d be showing it untested."},
+    {"turn": "T07", "speaker": "A", "type": "answer", "summary": "A says leadership will not expect testing and asks that it looks solid.", "quote": "Just make sure it looks solid."},
+    {"turn": "T08", "speaker": "B", "type": "commitment", "summary": "B says the screens will be ready Wednesday afternoon.", "quote": "I’ll have the screens ready Wednesday afternoon."},
+    {"turn": "T09", "speaker": "A", "type": "statement", "summary": "A thanks B for picking this up.", "quote": "Great, thanks for picking this up."}
+  ],
+  "signals": [
+    {"type": "ambiguous_term", "description": "'Seamless' is used without saying which parts or what it means.", "evidence": [{"turn": "T01", "quote": "The onboarding flow needs to feel more seamless."}]},
+    {"type": "unclear_responsibility", "description": "B asks who decides what goes to leadership and A replies it is mostly B's, with a possible review.", "evidence": [{"turn": "T04", "quote": "Do you want me to decide what goes to leadership as well, or will you review it first?"}, {"turn": "T05", "quote": "Mostly it’s yours."}]},
+    {"type": "expectation_difference", "description": "B says showing untested is a concern, A says testing is not expected.", "evidence": [{"turn": "T06", "quote": "I do think two days is tight for user testing, so I’d be showing it untested."}, {"turn": "T07", "quote": "Leadership won’t expect testing."}]},
+    {"type": "unanswered_question", "description": "B asked which parts A had in mind and A did not name any.", "evidence": [{"turn": "T02", "quote": "Which parts of the flow are you thinking of?"}, {"turn": "T03", "quote": "Pick what matters most."}]}
+  ],
+  "perspectives": {
+    "A": [
+      {"kind": "request", "text": "A needs the flow in front of leadership on Thursday.", "evidence": [{"turn": "T01", "quote": "I need it in front of the leadership team on Thursday."}]},
+      {"kind": "expectation", "text": "A expects B to pick what matters most.", "evidence": [{"turn": "T03", "quote": "Pick what matters most."}]},
+      {"kind": "position", "text": "A says leadership will not expect testing.", "evidence": [{"turn": "T07", "quote": "Leadership won’t expect testing."}]}
+    ],
+    "B": [
+      {"kind": "concern", "text": "B says two days is tight.", "evidence": [{"turn": "T02", "quote": "Thursday this week? That’s two days."}]},
+      {"kind": "proposal", "text": "B will look at sign-up and first-run screens.", "evidence": [{"turn": "T04", "quote": "I can look at the sign-up and the first-run screens."}]},
+      {"kind": "concern", "text": "B says the flow would be shown untested.", "evidence": [{"turn": "T06", "quote": "I do think two days is tight for user testing, so I’d be showing it untested."}]}
+    ]
+  },
+  "explicit_agreements": [],
+  "unresolved": [
+    {"description": "Whether A will review before leadership is left as a maybe.", "evidence": [{"turn": "T05", "quote": "I’ll glance at it Wednesday night if I can."}]},
+    {"description": "B's concern about showing it untested was answered with A's view, not settled.", "evidence": [{"turn": "T07", "quote": "Leadership won’t expect testing."}]}
+  ]
+}

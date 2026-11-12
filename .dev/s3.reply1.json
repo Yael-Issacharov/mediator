@@ -1,0 +1,44 @@
+{
+  "topics": ["Rollout plan for the new checkout", "Payment retries under load", "Full versus phased rollout", "Who decides"],
+  "statements": [
+    {"turn": "T01", "speaker": "A", "type": "proposal", "summary": "A proposes rolling out to all users on Monday, citing pilot numbers and the cost of waiting a sprint.", "quote": "roll the new checkout out to all users on Monday"},
+    {"turn": "T02", "speaker": "B", "type": "concern", "summary": "B raises payment retries at full volume and rollback as a concern.", "quote": "My concern is payment retries"},
+    {"turn": "T03", "speaker": "A", "type": "question", "summary": "A asks whether B's worry is retries under load rather than the design.", "quote": "worried about retries under load, not about the checkout design itself"},
+    {"turn": "T04", "speaker": "B", "type": "answer", "summary": "B confirms and says the design is fine.", "quote": "The design is fine"},
+    {"turn": "T05", "speaker": "A", "type": "objection", "summary": "A cites the pilot (5,000 users, no retry failures) as enough evidence to go.", "quote": "the pilot had 5,000 users and no retry failures"},
+    {"turn": "T06", "speaker": "B", "type": "proposal", "summary": "B proposes starting with 10%.", "quote": "still start with 10%"},
+    {"turn": "T07", "speaker": "A", "type": "objection", "summary": "A says a phased rollout costs a week and prefers the risk.", "quote": "A phased rollout costs us a week"},
+    {"turn": "T08", "speaker": "B", "type": "statement", "summary": "B says they would accept the week.", "quote": "take the week"},
+    {"turn": "T09", "speaker": "A", "type": "clarification", "summary": "A summarises that both want a safe launch and disagree on how much risk the week is worth.", "quote": "We both want a safe launch, and we disagree about how much risk the week is worth"},
+    {"turn": "T10", "speaker": "B", "type": "question", "summary": "B confirms the summary and asks who breaks the tie.", "quote": "Who breaks the tie"},
+    {"turn": "T11", "speaker": "A", "type": "commitment", "summary": "A suggests Rina and says they will set up a call.", "quote": "set up a short call"}
+  ],
+  "signals": [
+    {"type": "explicit_objection", "description": "B objects to a full rollout on retry and rollback grounds; later restates a preference for 10% first.", "evidence": [{"turn": "T02", "quote": "My concern is payment retries"}, {"turn": "T06", "quote": "still start with 10%"}]},
+    {"type": "clarification_request", "description": "A asks B to confirm what the concern is.", "evidence": [{"turn": "T03", "quote": "worried about retries under load, not about the checkout design itself"}]},
+    {"type": "expectation_difference", "description": "A and B state different views on whether the pilot evidence is enough.", "evidence": [{"turn": "T05", "quote": "I think that’s enough evidence to go"}, {"turn": "T06", "quote": "I just don’t think 5,000 users is representative of Monday morning traffic"}]},
+    {"type": "unclear_responsibility", "description": "B asks who breaks the tie; A answers 'Probably Rina', so the decision owner is tentative and not confirmed by B or Rina in the transcript.", "evidence": [{"turn": "T10", "quote": "Who breaks the tie"}, {"turn": "T11", "quote": "Probably Rina, since it touches both our areas"}]}
+  ],
+  "perspectives": {
+    "A": [
+      {"kind": "proposal", "text": "A proposes rolling out to all users on Monday.", "evidence": [{"turn": "T01", "quote": "roll the new checkout out to all users on Monday"}]},
+      {"kind": "position", "text": "A considers the pilot evidence enough to go.", "evidence": [{"turn": "T05", "quote": "the pilot had 5,000 users and no retry failures"}]},
+      {"kind": "position", "text": "A would accept the risk rather than lose a week.", "evidence": [{"turn": "T07", "quote": "A phased rollout costs us a week"}]},
+      {"kind": "decision_understanding", "text": "A describes the situation as a shared goal of a safe launch with a disagreement on acceptable risk.", "evidence": [{"turn": "T09", "quote": "We both want a safe launch, and we disagree about how much risk the week is worth"}]}
+    ],
+    "B": [
+      {"kind": "concern", "text": "B is concerned that payment retries at full volume could prevent a clean rollback.", "evidence": [{"turn": "T02", "quote": "My concern is payment retries"}]},
+      {"kind": "position", "text": "B says the design is fine and load behaviour is untested.", "evidence": [{"turn": "T04", "quote": "The design is fine"}]},
+      {"kind": "proposal", "text": "B proposes starting with 10%.", "evidence": [{"turn": "T06", "quote": "still start with 10%"}]},
+      {"kind": "position", "text": "B would accept the one-week cost.", "evidence": [{"turn": "T08", "quote": "take the week"}]},
+      {"kind": "request", "text": "B asks who breaks the tie.", "evidence": [{"turn": "T10", "quote": "Who breaks the tie"}]}
+    ]
+  },
+  "explicit_agreements": [
+    {"description": "Both explicitly agreed the summary that they both want a safe launch and differ on how much risk the week is worth.", "evidence": [{"turn": "T09", "quote": "We both want a safe launch, and we disagree about how much risk the week is worth"}, {"turn": "T10", "quote": "Yes, that’s it"}]}
+  ],
+  "unresolved": [
+    {"description": "Full rollout Monday versus phased start at 10% is undecided.", "evidence": [{"turn": "T07", "quote": "A phased rollout costs us a week"}, {"turn": "T08", "quote": "take the week"}]},
+    {"description": "Who makes the final decision is only tentatively named.", "evidence": [{"turn": "T11", "quote": "Probably Rina, since it touches both our areas"}]}
+  ]
+}

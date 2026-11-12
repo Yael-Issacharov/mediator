@@ -1,0 +1,100 @@
+{
+  "verdict": "communication_gap",
+  "verdict_rationale": "The final review and the meaning of 'solid' were left open, though the deadline was clear.",
+  "summary": [
+    "The Manager needs the flow ready for leadership on Thursday.",
+    "The Manager said the choice of content is mostly the Employee's.",
+    "A review before Thursday was left as a maybe.",
+    "The Employee said the flow would go to leadership untested."
+  ],
+  "shared_ground": [],
+  "insights": [
+    {
+      "id": "i1",
+      "category": "meaning_expectations",
+      "title": "Who decides what leadership sees",
+      "observation": "The Manager answered that the choice is mostly the Employee's and a review may happen.",
+      "hypothesis": "The words mostly yours and if I can may leave the final say open.",
+      "evidence": [
+        {"turn": "T04", "quote": "Do you want me to decide what goes to leadership as well, or will you review it first?"},
+        {"turn": "T05", "quote": "Mostly it’s yours."}
+      ],
+      "why_it_matters": "It may be unclear whether the Manager's review is needed before leadership sees it.",
+      "unknowns": ["Whether the Manager reviewed it before Thursday."],
+      "alternative_explanations": ["The Manager may review if time allows and otherwise trust the Employee."],
+      "profile_context": "The Employee's profile mentions a preference for explicit decision ownership.",
+      "clarification_question": "Who has the final say on what leadership sees?",
+      "confidence": "supported"
+    },
+    {
+      "id": "i2",
+      "category": "meaning_expectations",
+      "title": "Showing the flow untested",
+      "observation": "The Employee said the flow would be shown untested, and the Manager said leadership will not expect testing.",
+      "hypothesis": "The two may have different views on what solid means without testing.",
+      "evidence": [
+        {"turn": "T06", "quote": "I do think two days is tight for user testing, so I’d be showing it untested."},
+        {"turn": "T07", "quote": "Just make sure it looks solid."}
+      ],
+      "why_it_matters": "The Employee may deliver something the Manager does not see as solid.",
+      "unknowns": ["Whether the Employee still has concerns about testing."],
+      "alternative_explanations": ["The Employee's note may have been informational and the Manager's answer enough."],
+      "profile_context": "",
+      "clarification_question": "What does solid mean for leadership on Thursday?",
+      "confidence": "supported"
+    }
+  ],
+  "perspectives": {
+    "A": [
+      {"text": "The flow must reach leadership on Thursday.", "evidence": [{"turn": "T01", "quote": "I need it in front of the leadership team on Thursday."}]},
+      {"text": "The Employee should pick what matters most.", "evidence": [{"turn": "T03", "quote": "Pick what matters most."}]}
+    ],
+    "B": [
+      {"text": "Two days is a short time.", "evidence": [{"turn": "T02", "quote": "Thursday this week? That’s two days."}]},
+      {"text": "Showing the flow untested is a concern.", "evidence": [{"turn": "T06", "quote": "I do think two days is tight for user testing, so I’d be showing it untested."}]}
+    ],
+    "differ": ["They see the missing user testing differently."],
+    "overlap": ["Both want something ready for leadership on Thursday."]
+  },
+  "power": [
+    {
+      "id": "p1",
+      "dimension": "decision_ownership",
+      "title": "Who decides what goes forward",
+      "observation": "The Manager said the choice is mostly the Employee's and may glance at it Wednesday night.",
+      "hypothesis": "The work sits with the Employee while the final approval stays unnamed.",
+      "evidence": [
+        {"turn": "T03", "quote": "I trust you to handle it."},
+        {"turn": "T05", "quote": "Mostly it’s yours."}
+      ],
+      "unknowns": ["Who answers to leadership if they question the choice."],
+      "confidence": "supported"
+    },
+    {
+      "id": "p2",
+      "dimension": "voice_participation",
+      "title": "Raising concerns about time",
+      "observation": "The Employee raised the short time twice and the Manager answered each time.",
+      "hypothesis": "Both spoke openly about timing, though one conversation cannot show a pattern.",
+      "evidence": [
+        {"turn": "T02", "quote": "Thursday this week? That’s two days."},
+        {"turn": "T06", "quote": "I do think two days is tight for user testing"}
+      ],
+      "unknowns": ["Whether the Thursday date could have moved."],
+      "confidence": "supported"
+    }
+  ],
+  "open_questions": [
+    {"question": "Who has the final say on what goes to leadership?", "addressed_to": "both", "relates_to": ["i1"]},
+    {"question": "Will the Manager review the screens before Thursday?", "addressed_to": "A", "relates_to": ["i1"]},
+    {"question": "What does solid mean for an untested flow?", "addressed_to": "both", "relates_to": ["i2"]}
+  ],
+  "next_steps": [
+    {"text": "Name who approves the final screens."},
+    {"text": "Agree what solid means before Thursday."}
+  ],
+  "rejected_candidates": [
+    {"title": "Meaning of seamless", "reason": "The Employee narrowed it to two screens and no later gap shows."},
+    {"title": "Disagreement about the deadline", "reason": "The Employee named Wednesday afternoon and the Manager thanked them, so no gap shows."}
+  ]
+}
