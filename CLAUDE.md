@@ -23,7 +23,7 @@
   - TESTING.md section B, the 9 manual checks.
   - Optionally rerun section A on v11 to see the corrected s2 line.
 - Decided 2026-11-12 (Yael): keep the cap at 2 power findings.
-- Git: private repo https://github.com/Yael-Issacharov/mediator (main, first commit afb217a, 38 files incl. `.dev/` fixtures). Owner is Yael-Issacharov: `gh auth switch --hostname github.com --user Yael-Issacharov` before pushing, then switch back to yaeli-byte.
+- Git: PUBLIC repo (made public 2026-11-12 at Yael's request) https://github.com/Yael-Issacharov/mediator (main, first commit afb217a, 38 files incl. `.dev/` fixtures). Owner is Yael-Issacharov: `gh auth switch --hostname github.com --user Yael-Issacharov` before pushing, then switch back to yaeli-byte.
 - Next: the prototype is demo-ready. Only open choice: a name.
 
 ## Source of truth

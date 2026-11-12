@@ -1,6 +1,6 @@
 # mediator — links
 - Prototype (published artifact, private, v11 — 2026-11-12): https://claude.ai/artifact/NC9LEiCvLAPsEz5hQkgVNW
-- GitHub (private): https://github.com/Yael-Issacharov/mediator
+- GitHub (public): https://github.com/Yael-Issacharov/mediator
 - Local preview: http://localhost:4520 (launch config `mediator`)
 - Studio Pulse: https://claude.ai/artifact/LBKA2XPXUiCzvCq8hpWyv4
 - Plan: PLAN.md · Spec: SPEC.md · Test checklist: TESTING.md
