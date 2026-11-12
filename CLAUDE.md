@@ -18,11 +18,12 @@
   - Prepared scenarios now always load from the code, not the saved browser copy (`store.js`).
   - The scorer counts a finding at the same turns under another category as "found (filed under X)" (`eval.js`).
   - Checked locally with recorded replies: s2 now expects communication_gap; 0 console errors.
-- Published: https://claude.ai/artifact/NC9LEiCvLAPsEz5hQkgVNW (v11). Republish with `root` = `mediator`; never publish `.dev/`.
+- Published: https://claude.ai/artifact/NC9LEiCvLAPsEz5hQkgVNW (v12). Republish with `root` = `mediator`; never publish `.dev/`.
 - Waiting on Yael (optional):
   - TESTING.md section B, the 9 manual checks.
   - Optionally rerun section A on v11 to see the corrected s2 line.
 - Decided 2026-11-12 (Yael): keep the cap at 2 power findings.
+- GitHub Pages (public, no live AI → demo examples only): https://yael-issacharov.github.io/mediator/ — serves `main` root; `.nojekyll` + charset/viewport meta in index.html. Claude artifact = v12 (same files).
 - Git: PUBLIC repo (made public 2026-11-12 at Yael's request) https://github.com/Yael-Issacharov/mediator (main, first commit afb217a, 38 files incl. `.dev/` fixtures). Owner is Yael-Issacharov: `gh auth switch --hostname github.com --user Yael-Issacharov` before pushing, then switch back to yaeli-byte.
 - Next: the prototype is demo-ready. Only open choice: a name.
 
