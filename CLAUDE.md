@@ -18,7 +18,7 @@
   - Prepared scenarios now always load from the code, not the saved browser copy (`store.js`).
   - The scorer counts a finding at the same turns under another category as "found (filed under X)" (`eval.js`).
   - Checked locally with recorded replies: s2 now expects communication_gap; 0 console errors.
-- Published: https://claude.ai/artifact/NC9LEiCvLAPsEz5hQkgVNW (v13). Republish with `root` = `mediator`; never publish `.dev/`.
+- Published: https://claude.ai/artifact/NC9LEiCvLAPsEz5hQkgVNW (v14, titled "Mediator v2"). Republish with `root` = `mediator`; never publish `.dev/`.
 - Waiting on Yael (optional):
   - TESTING.md section B, the 9 manual checks.
   - Optionally rerun section A on v11 to see the corrected s2 line.
