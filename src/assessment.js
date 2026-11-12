@@ -106,6 +106,8 @@ export function diffDerived(before, after) {
     removed: [...x].filter(([k]) => !y.has(k)).map(([, v]) => v),
   };
 }
+// Card subtitle: the profile's own feedback-style statement, so it always matches the current answers.
+export const headlineOf = (p) => (derive(p.answers).pref.find((x) => x.q === 'q2') || {}).text || p.headline;
 export const answeredCount = (answers) => QUESTIONS.filter((q) => optionOf(q.id, answers[q.id])).length;
 export const changedQuestions = (a, b) => QUESTIONS.filter((q) => a[q.id] !== b[q.id]).map((q) => q.id);
 

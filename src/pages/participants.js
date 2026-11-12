@@ -1,6 +1,6 @@
 import { html, useState, useEffect } from '../lib.js';
 import { useStore, update } from '../store.js';
-import { QUESTIONS, BUCKETS, DEMO_ANSWERS, derive, diffDerived, answeredCount, changedQuestions, optionOf, DIMENSIONS } from '../assessment.js';
+import { QUESTIONS, BUCKETS, DEMO_ANSWERS, derive, diffDerived, answeredCount, changedQuestions, optionOf, DIMENSIONS, headlineOf } from '../assessment.js';
 import { Button, Card, Chip, PageHeader, Section, Tabs, Banner, Field, Table, Avatar, Empty } from '../ui.js';
 
 const fmt = (iso) => (iso ? new Date(iso).toLocaleString([], { dateStyle: 'medium', timeStyle: 'short' }) : 'Demo data');
@@ -103,7 +103,7 @@ function Profiles() {
     <div class="grid c2">${s.participants.map((p) => html`
       <button class=${`card link ${p.id === sel.id ? 'sel' : ''}`} aria-pressed=${p.id === sel.id} key=${p.id}
         onClick=${() => update((st) => { st.ui.selectedParticipant = p.id; })}>
-        <div class="row"><${Avatar} slot=${p.slot} /><div style="flex:1;min-width:0"><h3>${p.name}</h3><div class="small muted">${p.headline}</div></div>
+        <div class="row"><${Avatar} slot=${p.slot} /><div style="flex:1;min-width:0"><h3>${p.name}</h3><div class="small muted">${headlineOf(p)}</div></div>
           <${Chip}>v${p.version}<//></div></button>`)}</div>
     <${Detail} p=${sel} key=${sel.id} />`;
 }

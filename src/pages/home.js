@@ -2,6 +2,7 @@ import { html } from '../lib.js';
 import { useStore, update } from '../store.js';
 import { VERDICT, staleness } from './analysis.js';
 import { Button, Card, Chip, PageHeader, Section, Table, Empty, Avatar } from '../ui.js';
+import { headlineOf } from '../assessment.js';
 
 const go = (hash) => { location.hash = hash; };
 const STEPS = [
@@ -41,7 +42,7 @@ export function Home() {
           ${s.participants.map((p) => html`
             <${Card} href="#participants" key=${p.id}>
               <div class="row"><${Avatar} slot=${p.slot} />
-                <div style="flex:1;min-width:0"><h3>${p.name}</h3><div class="small muted">${p.headline}</div></div>
+                <div style="flex:1;min-width:0"><h3>${p.name}</h3><div class="small muted">${headlineOf(p)}</div></div>
                 <${Chip}>Profile v${p.version}<//></div>
             <//>`)}
         </div>
